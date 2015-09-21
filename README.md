@@ -1,4 +1,4 @@
-This is code used to collect data for the refugee project at #jhudash 205
+This is code used to collect data for the refugee project at #jhudash 2015
 ------------------------------
 
 Data spreadsheet is here: 
