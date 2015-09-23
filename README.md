@@ -25,6 +25,8 @@ This model operates on the basic principle that refugees will more successfully 
 
 We standardized all of these measures to be between 0 and 1, to minimize the effect of certain measures which vary wildly.  For instance Cyprus is 328 miles away, whereas New Zealand is 16,000.  Without standardization, this quickly becomes the deciding factor.
 
+Exploratory analysis and testing is in syrCor.R and final presentation of ranking is in compatibilityRank.R
+
 ----
 Cost Model
 
