@@ -1,0 +1,39 @@
+---
+title: "Refugee_Data"
+author: "Jeff Leek"
+date: "September 21, 2015"
+output: html_document
+---
+
+Read in the Google Sheet
+
+```{r}
+library(gplots)
+library(googlesheets)
+my_url = "https://docs.google.com/spreadsheets/d/1eRDlcwkT0hqqi-DNVU4dgJHxKRsLYY0VAqOMjxcD2r8/pubhtml"
+my_gs = gs_url(my_url)
+dat = gs_read(my_gs)
+```
+
+
+Read immigrant data from Wikipedia
+
+```{r}
+library(rvest)
+library(httr)
+library(dplyr)
+url1 = "https://en.wikipedia.org/wiki/List_of_countries_by_immigrant_population"
+immigrant = url1 %>% html %>%
+  html_nodes(xpath='//*[@id="mw-content-text"]/table[1]') %>%
+  html_table()
+immigrant = immigrant[[1]]
+```
+
+
+Join the data sets
+
+```{r}
+dat_up = left_join(dat,immigrant,by=c("Country.Name"="Country"))
+```
+
+
