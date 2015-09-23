@@ -1,0 +1,124 @@
+CODE BOOK
+all data gathered September 2015
+
+LINKS
+World Bank Data:
+http://databank.worldbank.org/data/reports.aspx?Code=SI.POV.GINI&id=af3ce82b&report_name=Popular_indicators&populartype=series&ispopular=y#
+
+Eurostats:
+http://ec.europa.eu/eurostat/data/database
+
+CIA World Fact Book:
+https://www.cia.gov/library/publications/resources/the-world-factbook/rankorder/rankorderguide.html
+
+ [1] "Country.Name"    
+ [2] "Current.number.of.registered.refugees" 
+	-- from https://en.wikipedia.org/wiki/Refugees_of_the_Syrian_Civil_War
+ [3] "Donations"  -- donations made by Country to Syrian Refugee Crisis
+	-- from https://en.wikipedia.org/wiki/Refugees_of_the_Syrian_Civil_War             
+ [4] "signed.the.treaty." -- whether or not the country has signed the UN Refugee Treaty             
+ [5] "Cost.per.Refugee" -- calculated based on Eugene's regression
+	-- modeled on 
+	-- regressed on "Consumer.Price.Index.plus.rent.index" and "educationExpPercOfGDP"
+ [6] "Consumer.Price.Index.plus.rent.index" 
+	-- http://www.numbeo.com/cost-of-living/
+ [7] "X..Primary.educated" -- percent of workforce whose highest education was Primary School       
+	-- from http://data.worldbank.org/indicator/SL.TLF.PRIM.ZS    
+ [8] "X..Secondary.Educated" -- percent of workforce whose highest education was Secondary School   
+	-- from http://data.worldbank.org/indicator/SL.TLF.SECO.ZS             
+ [9] "X..Tertiary.Educated" -- percent of workforce whose highest education was Tertiary (Graduate) School  
+	-- http://data.worldbank.org/indicator/SL.TLF.TERT.ZS      
+[10] "Employement.Rate.of.Unskilled.Labor.." -- only on European countries, from Eurostats
+[11] "gdpByUse...agriculture" -- percentage of GDP produced from agriculture               
+[12] "gdpByUse...industry" -- percentage of GDP produced from industry
+[13] "gdpByUse...services" -- percentage of GDP produced from services
+	-- [11] thru [13] from https://www.cia.gov/library/publications/the-world-factbook/fields/2012.html                
+[14] "gdpByEnd...household" -- percentage of GDP spent on household expenditures                 
+[15] "gdpByEnd...government" -- percentage of GDP spent on government expenditures                 
+[16] "gdpByEnd...invFixedCapital" -- percentage of GDP spent on fixed capital investments           
+[17] "gdpByEnd...invInventories" -- percentage of GDP spent on inventory             
+[18] "gdpByEnd...exports" -- percentage of GDP spent on exports  
+	-- [14] thru [18] from https://www.cia.gov/library/publications/the-world-factbook/fields/2259.html             
+[19] "age0_14"                               
+[20] "age15_24"                             
+[21] "age25_54"                              
+[22] "age55_64"                             
+[23] "age64_over"
+	-- [19] thru [23] percentage of population in given age range
+	-- [19] thru [23] from https://www.cia.gov/library/publications/the-world-factbook/fields/2010.html                      
+[24] "popGrowth" -- percentage population growth
+	-- from https://www.cia.gov/library/publications/the-world-factbook/fields/2002.html                    
+[25] "dependencyRatio" -- percentage of dependents (young and old) to working age population
+	-- from https://www.cia.gov/library/publications/the-world-factbook/fields/2261.html
+[26] "healthExpPercOfGDP"  -- percentage of GDP spent on Health Care
+	-- from https://www.cia.gov/library/publications/resources/the-world-factbook/fields/2225.html                 
+[27] "educationExpPercOfGDP"  -- percentage of GDP spent on Education
+	-- from https://www.cia.gov/library/publications/the-world-factbook/fields/2206.html  
+[28] "physiciansPer1000" -- number of physicians per 1000 people     
+	-- from https://www.cia.gov/library/publications/the-world-factbook/fields/2226.html               
+[29] "hospitalsPer1000" -- number of physicians per 1000 people          
+	-- from https://www.cia.gov/library/publications/the-world-factbook/fields/2227.html
+[30] "Muslim_Population"    
+	-- from https://en.wikipedia.org/wiki/Islam_by_country        
+[31] "Criminality.2012" -- murder rate per 100,000                  
+[32] "GDP_Growth_2014"                      
+[33] "GDP_per_Capita_2014"                   
+[34] "Life_Expentancy"                      
+[35] "Refugee_Pop_by_Origin"                 
+[36] "Refugee_Population_by_Asylum"         
+[37] "Unemployment2013"                      
+[38] "Secunday_ed_Enrollment_2013.x"    
+	-- [31] thru [38] from World Bank Data    
+[39] "LABOR.FORCE" -- number of working age people
+	-- from https://www.cia.gov/library/publications/the-world-factbook/rankorder/2095rank.html                          
+[40] "X.SQ.KM." -- total area in sq. km. from CIA World Fact Book                         
+[41] "migrationRate" -- migrants entering country vs. leaving country in a year
+	-- from https://www.cia.gov/library/publications/the-world-factbook/rankorder/2112rank.html                      
+[42] "youthUnemployment" 
+	-- from https://www.cia.gov/library/publications/the-world-factbook/rankorder/2229rank.html                   
+[43] "X2010.Total"                           
+[44] "X2009.Total.positive.decisions"       
+[45] "X2013.Total.positive.decisions"        
+[46] "X2014.Rejected"                       
+[47] "X2012.Rejected"                        
+[48] "X2008.Rejected"                       
+[49] "X2011.Humanitarian.status"             
+[50] "X2012.Humanitarian.status"            
+[51] "X2008.Geneva.Convention.status"        
+[52] "X2008.Humanitarian.status"            
+[53] "X2009.Rejected"                        
+[54] "X2010.Geneva.Convention.status"       
+[55] "X2010.Total.positive.decisions"        
+[56] "X2011.Geneva.Convention.status"       
+[57] "X2013.Rejected"                        
+[58] "X2010.Humanitarian.status"            
+[59] "X2014.Geneva.Convention.status"        
+[60] "X2011.Total"                          
+[61] "X2009.Total"                           
+[62] "X2014.Total.positive.decisions"       
+[63] "X2008.Total"                           
+[64]"X2012.Total"                          
+[65] "X2014.Total"                           
+[66] "X2013.Humanitarian.status"            
+[67] "X2011.Rejected"                        
+[68] "X2008.Total.positive.decisions"       
+[69] "X2009.Geneva.Convention.status"        
+[70] "X2010.Rejected"                       
+[71] "X2013.Total"                           
+[72] "X2012.Geneva.Convention.status"       
+[73] "X2013.Geneva.Convention.status"        
+[74] "X2011.Total.positive.decisions"       
+[75] "X2009.Humanitarian.status"             
+[76] "X2014.Humanitarian.status"            
+[77] "X2012.Total.positive.decisions"        
+	-- a bunch of data points about refugee applications to European countries
+	-- [49] thru [77] from EuroStats
+	-- explanation at http://ec.europa.eu/eurostat/statistics-explained/index.php/File:First_instance_decisions_on_(non-EU)_asylum_applications,_2014_(number,_rounded_figures)_YB15_IV.png
+[78] "Population" -- total population of given country
+	-- from https://www.cia.gov/library/publications/resources/the-world-factbook/rankorder/2119rank.html                      
+[79] "Distance" -- in km, as the crow flies, from Damascus to nearest city in a given country                             
+[80] "teacherSalary"  -- used entry-level ("Initial") Lower-Secondary (approximating language teachers, etc. for refugees)
+	-- from http://www.oecd-ilibrary.org/education/teachers-salaries_teachsal-table-en                
+[81] "RefugeePopulation2009"  
+	-- from World Bank data
+	
