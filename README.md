@@ -25,6 +25,21 @@ This model operates on the basic principle that refugees will more successfully 
 
 We standardized all of these measures to be between 0 and 1, to minimize the effect of certain measures which vary wildly.  For instance Cyprus is 328 miles away, whereas New Zealand is 16,000.  Without standardization, this quickly becomes the deciding factor.
 
+----
+Cost Model
+
+This model considers the economic cost of hosting a refugee from the government's perspective. We used the training data from the OECD research in an attempt to replicate their analysis of the expenditure, which included temporary sustenance of food, clothing, and shelter, as well as long term professional training. We considered a combination of 8 different possible variables that can contribute to the expenditure calculation. 
+
+Using multinomial linear regression and cross validation to avoid overfitting, we reached an equation:
+Cost = B0 + B1 x CPI + B2 x Edu + B3 x CPI x Edu
+where
+    Cost = Cost to the government per refugee (in 2015 USD) 
+	CPI = consumer price index plus rent index
+	Edu = Education expenditure as a percentage of GDP
+
+Using the predicted cost data, found the number of refugees each country needs to harbor, such that the cost of refugees is the same percentage of its GDP.
+The model allows us to rank the countries by the economic availability to host the refugees.
+
 
 ----
 Capacity Model
