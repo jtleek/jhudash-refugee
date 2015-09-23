@@ -26,4 +26,12 @@ This model operates on the basic principle that refugees will more successfully 
 We standardized all of these measures to be between 0 and 1, to minimize the effect of certain measures which vary wildly.  For instance Cyprus is 328 miles away, whereas New Zealand is 16,000.  Without standardization, this quickly becomes the deciding factor.
 
 
+----
+Capacity Model
+
+This model is a multiple linear regression on a sub-set of the data we scraped to predict the 2009 global refugee population by country.  We used this as a first-order metric for capacity and iteratively performed linear regression and removed variables that did not contribute to the overall fit (based on P-value).  We found that the best model incorporates GDP by use (as a percentage towards industry, services, and agriculture), the percent of the country primary educated, and the percent of GDP used for healthcare.
+
+We then standardized the predicted values for all countries and normalized them on a scale of 0-100.  We found that the results seem realistic.  Germany and the United States have the highest capacity while small Middle-Eastern and Northern African countries have the lowest capacity.
+
+
     
