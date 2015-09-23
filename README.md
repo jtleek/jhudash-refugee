@@ -30,6 +30,8 @@ Cost Model
 
 This model considers the economic cost of hosting a refugee from the government's perspective. We used the training data from the OECD research in an attempt to replicate their analysis of the expenditure, which included temporary sustenance of food, clothing, and shelter, as well as long term professional training. We considered a combination of 8 different possible variables that can contribute to the expenditure calculation. 
 
+As a disclaimer, the training set is skewed since it only contains the cost of OECD countries and may not be suitable to model emerging markets.
+
 Using multinomial linear regression and cross validation to avoid overfitting, we reached an equation:
 
 Cost = B0 + B1 x CPI + B2 x Edu + B3 x CPI x Edu
